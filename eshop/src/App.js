@@ -11,7 +11,9 @@ function App() {
       <Router>
         <Routes>
           <Route path="/checkout" element={
+            <><Header />
           <Checkout />
+          </>
           } />
           <Route path="/" element={
           <><Header />
