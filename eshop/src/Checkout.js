@@ -1,9 +1,23 @@
-import React from 'react'
-import "./Checkout.css"
+import React from "react";
+import CheckoutProduct from "./CheckoutProduct";
+import "./Checkout.css";
 function Checkout() {
   return (
-    <div>Checkout</div>
-  )
+    <div className="checkout">
+      <div className="checkout__left">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+          alt="" className="checkout__ad"
+        />
+
+        <div>
+          <h2 className="chekout__title">Your Shopping Basket</h2>
+          <CheckoutProduct />
+        </div>
+      </div>
+      <div className="checkout__right"></div>
+    </div>
+  );
 }
 
-export default Checkout
+export default Checkout;
